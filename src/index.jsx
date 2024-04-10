@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import EmployeeList from "./pages/EmployeeList";
 import EmployeeDetails from "./pages/EmployeeDetails";
+import Report from "./pages/Report"
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,7 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/employees/:empId",
     element: <EmployeeDetails />,
-  },
+  },{
+    path: "/report",
+    element: <Report/>
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
