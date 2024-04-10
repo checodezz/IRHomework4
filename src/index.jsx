@@ -5,6 +5,7 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import EmployeeList from "./pages/EmployeeList";
+import EmployeeDetails from "./pages/EmployeeDetails";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -15,9 +16,9 @@ const router = createBrowserRouter([
     element: <EmployeeList />,
   },
   {
-    path : "/employees/:empId",
-    element : <EmployeeDetails/>
-  }
+    path: "/employees/:empId",
+    element: <EmployeeDetails />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

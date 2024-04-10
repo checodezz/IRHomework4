@@ -12,7 +12,7 @@ const EmployeeList = () => {
     },
     {
       id: 2,
-      name: "Jans Smith",
+      name: "Jane Smith",
       designation: "Designer",
       department: "Design",
     },
@@ -34,7 +34,7 @@ const EmployeeList = () => {
             <li className="list-group-item" key={emp.id}>
               <h5>{emp.name}</h5>
               <p>{emp.designation}</p>
-              <Link to="/employees/empId" className="btn btn-primary">
+              <Link to={`/employees/${emp.id}`} className="btn btn-primary">
                 View Details
               </Link>
             </li>
